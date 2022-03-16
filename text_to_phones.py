@@ -1,4 +1,3 @@
-import urllib.request
 with open("cmudict","r") as cmu:
     cmu_txt=cmu.readlines()
 pronunciations={}
