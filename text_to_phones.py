@@ -24,5 +24,3 @@ def text_to_phones(text):
 def input_to_phones():
     return text_to_phones(input("What text do you want to be synthesized?"))
 
-print(text_to_phones("let's give this a good old tryy!"))
-input_to_phones()
