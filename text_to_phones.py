@@ -1,4 +1,9 @@
-with open("cmudict","r") as cmu:
+import os
+
+this_file = os.path.abspath(__file__)
+this_dir = os.path.dirname(this_file)
+wanted_file = os.path.join(this_dir, "cmudict")
+with open(wanted_file,"r") as cmu:
     cmu_txt=cmu.readlines()
 pronunciations={}
 for line in cmu_txt:
